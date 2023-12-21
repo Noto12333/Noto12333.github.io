@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registation</h1>
+
+    <form action="request.php" method="get">
+        <label for="name">Student Name</label>
+        <input type="text" name="stu_name" id="name">
+        <br><br>
+
+        <label for="email">Student Email</label>
+        <input type="email" name="stu_email" id="email">
+        <br><br>
+
+        <label for="password">Student Password</label>
+        <input type="password" name="stu_password" id="password">
+        <br><br>
+
+        <label for="phone">Student Phone</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+
+        <label for="dob">Date of Bath</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+
+        <label for="passport">Passport Photo</label>
+        <input type="file" accept="image/*" name="stu_passport" id="passport">
+        <br><br>
+
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+        <br><br>
+
+        <label for="year">Year</label>
+        <select name="stu_year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+        <br><br>
+
+        <label for="">Hobbies</label>
+        <br><br>
+
+        <input type="checkbox" name="travelling" id="travelling" value="Travelling"><label for="trevelling">Travelling</label>
+        <br><br>
+
+        <input type="checkbox" name="Gamming" id="gamming" value="Gamming"><label for="gamming">Gamming</label>
+        <br><br>
+
+        <input type="checkbox" name="reading" id="reading" value="Reading"><label for="reading">Reading</label>
+        <br><br>
+
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="50" rows="10"></textarea>
+        <br><br>
+
+        <input type="range">
+        <input type="color">
+        <input type="time">
+        <br><br>
+
+        <button type="submit">Save</button>
+
+    </form>
+</body>
+</html>

@@ -1,48 +1,228 @@
 h1{
-    color: red;
+    /* r g b  */
+    /* 0->9 -> a->f */
+    /* color: #ff0000; */
+    /* 0 ->255 */
+    color: rgb(255, 0, 0);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
     word-spacing: 30px;
 }
-
+/* universal selector */
 /* *{
     color: green;
     text-transform: uppercase;
 } */
+*{
+    /* color: green;
+    text-transform: uppercase; */
+    margin: 0px;
+    padding: 0px;
+}
 
+/* tag selector /element selector */
 h2{
     color: red;
     text-align: center;
 }
-
-/*attribute selector*/
+/* attribue selector */
 a[title="google"]{
     color: red;
     text-decoration: none;
 }
-
-#idslector{
+/* id selector */
+#idselector{
     color: brown;
     line-height: 30px;
     letter-spacing: 20px;
     text-indent: 50px;
-    text-transform: capitalize;
     font-style: italic;
+    text-transform: capitalize;
 }
-
+/* class selector */
 .classselector{
     color: red;
-    word-wrap: 30px;
+    word-spacing: 30px;
     font-size: 24px;
     letter-spacing: 5px;
     line-height: 25px;
 }
-
+/* desc selector */
 .desc a{
     color: red;
 }
-
+/* child selector */
 .child>a{
     color: red;
 }
+/* Pseudo  */
+a:link{
+    color: red;
+    letter-spacing: 5px;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color: brown;
+}
+/* target */
+:target{
+    color: red;
+    border: 1px solid black;
+    letter-spacing: 10px;
+}
+
+/* border */
+
+.borderone{
+    border: 10px dashed red;
+}
+
+.bordertwo{
+    border-top: 20px solid yellow;
+    border-left: 20px solid red;
+}
+.borderthree{
+    /* border-style: solid;/ */
+    /* all four */
+    /* border-style: solid dotted; */
+    /* T&B / L&R */
+    /* border-style: dashed solid dotted; */
+    /* T / L&R / B */
+    border-style: dotted double solid dashed;
+    /* T / R / B / L */
+}
+.borderwidth{
+    border-width: 20px 5px 10px 30px;
+    border-style: dotted;
+    border-color: red yellow;
+}
+
+/* margin */
+.margin{
+    border: 3px solid red;
+    /* margin: 40px; */
+    margin-top: 100px;
+}
+/* padding */
+.padding{
+    border: 2px solid black;
+    /* padding: 40px 100px; */
+    padding-top: 100px;
+}
+
+/* layout */
+
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+}
+
+/* float */
+.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+} 
+
+
+/*grid*/
+gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+.gridone{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+    /* grid-gap: 20px; */
+}
+
+.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.columnadd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+/* position */
+
+
+.relative_parent{
+    border: 2px solid red;
+    width: 1000px;
+    height: 600px;
+}
+
+.position_relative{
+    border: 2px solid green;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.absolute_parent{
+    border: 2px solid brown;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+.position_absolute{
+    border: 2px solid yellow;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+
+/* font */
+
+.online_font{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+} 
